@@ -1,0 +1,15 @@
+{%  block content %}
+<h1>bienvenido a la plataforma de asistencia de la cohorte 9 </h1>
+{% if  cohortes %}
+    {%for cohorte in cohortes %}
+        <p>{{cohorte.name}}</p>
+    {% endfor %}
+{% endif %}
+<h2>Estudiantes</h2>
+{% if  students %}
+    {%for student in students %}
+        <p>{{student.name}}</p>
+    {% endfor %}
+{% endif %}
+
+{% endblock content %}

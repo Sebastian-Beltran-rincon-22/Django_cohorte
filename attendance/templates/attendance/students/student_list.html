@@ -1,0 +1,10 @@
+{% block content  %}
+{%if student_list%}
+    {% for student in student_list%}
+        <a href="{{student.get_absolute_url}}">{{student.name}}</a>
+    {%endfor%}
+{%endif%}
+{% endblock content  %}
+{% comment %} {%if student_list%}
+    {% for student in student_list%}
+        <a href="">{{student.name}}</a> {% endcomment %}
