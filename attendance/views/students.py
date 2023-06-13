@@ -11,3 +11,14 @@ class StudentDetailView(generic.DetailView):
     model = Student
     context_object_name ='student_detail'
     template_name = 'attendance/students/student_datail.html'
+
+class StudentCreateView(generic.CreateView):
+    model = Student
+    fields = [
+        'fname',
+        'lname',
+        'document_type',
+        'document_number',
+        'cohorte'
+    ]
+    template_name = 'attendance/students/student_form.html'

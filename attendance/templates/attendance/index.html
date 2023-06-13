@@ -8,7 +8,7 @@
 <h2>Estudiantes</h2>
 {% if  students %}
     {%for student in students %}
-        <p>{{student.name}}</p>
+        <p>{{student.fname}} {{student.lname}}</p>
     {% endfor %}
 {% endif %}
 
